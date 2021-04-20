@@ -34,5 +34,10 @@ Route::group([
     });
 });
 
-Route::apiResource('products','App\Http\Controllers\ProductController')->except('show')->middleware(['api','auth:api']);
+Route::middleware(['api','auth:api'])->group(function(){
+
+    Route::apiResource('products','App\Http\Controllers\ProductController')->except('show');
+    Route::get('products/image/{id}','App\Http\Controllers\ProductController@getImage');
+});
+
     
