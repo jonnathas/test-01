@@ -11,3 +11,4 @@ Para instalação:
 5. Executeo comando ```composer install```;
 6. Executeo comando ```php artisan jwt:secret```;
 7. Executeo comando ```php artisan migrate```;
+8. Executeo comando ```php artisan key:generate```;
