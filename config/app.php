@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -166,8 +166,7 @@ return [
          * Package Service Providers...
          */
 
-         Jonnathas\Teste\Providers\ServiceProvider::class,
-
+         
         /*
          * Application Service Providers...
          */
